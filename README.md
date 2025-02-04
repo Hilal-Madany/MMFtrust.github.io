@@ -36,7 +36,7 @@ For Zakat donations or more information, you can contact them via email at [mmft
 
 ## Active Members
 
-- **Syed Hilaluddin Madany** - +966 542590786
+- **Syed Hilaluddin Madany** - +966 534262974 (KSA)/ +91 9650329719 (India)
 - **Asim Ahmad Madny** - +91 9559359336
 - **Syed Najmuddin Ahmad Madany** - +91 9452541133
 
