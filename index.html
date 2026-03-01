@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Maktab & Madarsa Furquaniah Trust | Fatehpur</title>
+    <title>Maktab & Madarsa Furquaniah Trust | Official</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -14,7 +14,7 @@
             --white: #ffffff;
         }
 
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; scroll-behavior: smooth; }
         body { background-color: var(--light-bg); color: var(--text-dark); line-height: 1.6; }
 
         /* Header */
@@ -31,15 +31,15 @@
             box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
-        .logo h1 { font-size: 1.5rem; font-weight: 700; line-height: 1.2; }
-        .logo span { font-size: 0.8rem; font-weight: 300; display: block; color: var(--secondary-gold); }
+        .logo h1 { font-size: 1.3rem; font-weight: 700; line-height: 1.2; }
+        .logo span { font-size: 0.75rem; font-weight: 300; display: block; color: var(--secondary-gold); }
 
         /* Hero Section */
         .hero {
-            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1350&q=80');
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1546410531-bb4caa6b424d?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');
             background-size: cover;
             background-position: center;
-            height: 70vh;
+            height: 60vh;
             display: flex;
             flex-direction: column;
             justify-content: center;
@@ -49,8 +49,10 @@
             padding: 0 20px;
         }
 
-        .hero h2 { font-size: 2.5rem; margin-bottom: 1rem; }
-        .hero p { font-size: 1.2rem; max-width: 800px; margin-bottom: 2rem; }
+        .hero h2 { font-size: 2.2rem; margin-bottom: 1rem; }
+        .hero p { font-size: 1.1rem; max-width: 700px; margin-bottom: 2rem; color: #ddd; }
+
+        /* Buttons */
         .btn {
             background: var(--secondary-gold);
             color: var(--text-dark);
@@ -59,104 +61,105 @@
             font-weight: 600;
             border-radius: 5px;
             transition: 0.3s;
+            display: inline-block;
+            border: none;
+            cursor: pointer;
         }
-        .btn:hover { background: var(--white); }
+        .btn:hover { background: var(--white); transform: translateY(-2px); }
 
         /* Trust Badges */
         .badges {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 15px;
             flex-wrap: wrap;
-            padding: 2rem;
+            padding: 1.5rem;
             background: #fff;
+            border-bottom: 1px solid #eee;
         }
-        .badge-item { border: 1px solid #ddd; padding: 10px 20px; border-radius: 8px; font-weight: 600; font-size: 0.9rem; color: var(--primary-green); }
+        .badge-item { border: 1.5px solid var(--primary-green); padding: 8px 15px; border-radius: 50px; font-weight: 600; font-size: 0.8rem; color: var(--primary-green); }
 
-        /* Dual Campus Section */
-        .container { max-width: 1200px; margin: 4rem auto; padding: 0 20px; }
-        .section-title { text-align: center; margin-bottom: 3rem; }
-        .section-title h2 { color: var(--primary-green); font-size: 2rem; }
-
+        /* Content Sections */
+        .container { max-width: 1100px; margin: 3rem auto; padding: 0 20px; }
+        
         .campus-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 30px;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+            margin-top: 2rem;
         }
 
         .card {
             background: var(--white);
             padding: 2rem;
-            border-radius: 15px;
-            box-shadow: 0 10px 20px rgba(0,0,0,0.05);
-            border-top: 5px solid var(--primary-green);
+            border-radius: 12px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-top: 6px solid var(--primary-green);
         }
 
-        .card h3 { margin-bottom: 1rem; color: var(--primary-green); border-bottom: 1px solid #eee; padding-bottom: 10px; }
-        .card ul { list-style: none; margin-top: 1rem; }
-        .card ul li { margin-bottom: 10px; padding-left: 25px; position: relative; }
+        .card h3 { color: var(--primary-green); margin-bottom: 10px; font-size: 1.4rem; }
+        .card ul { list-style: none; margin-top: 15px; }
+        .card ul li { margin-bottom: 8px; padding-left: 25px; position: relative; font-size: 0.95rem; }
         .card ul li::before { content: '✓'; position: absolute; left: 0; color: var(--primary-green); font-weight: bold; }
 
-        /* Digital Hub / Motto */
-        .motto-box {
+        /* Mission Motto */
+        .motto-banner {
             background: var(--primary-green);
             color: white;
-            padding: 4rem 2rem;
+            padding: 3rem 2rem;
             text-align: center;
-            border-radius: 20px;
+            border-radius: 15px;
             margin: 4rem 0;
         }
+        .motto-banner h2 { font-size: 1.8rem; letter-spacing: 1px; }
+        .motto-banner p { opacity: 0.9; margin-top: 10px; }
 
         /* Form Section */
-        .contact-flex {
+        .contact-section {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 50px;
+            grid-template-columns: 1.2fr 0.8fr;
+            gap: 40px;
             background: white;
-            padding: 3rem;
-            border-radius: 20px;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.08);
         }
 
-        .form-group { margin-bottom: 1.5rem; }
-        label { display: block; margin-bottom: 5px; font-weight: 600; }
+        .form-group { margin-bottom: 1.2rem; }
+        label { display: block; margin-bottom: 5px; font-weight: 600; font-size: 0.9rem; }
         input, select, textarea {
             width: 100%;
             padding: 12px;
             border: 1px solid #ddd;
-            border-radius: 5px;
+            border-radius: 6px;
             font-size: 1rem;
+            background: #fdfdfd;
         }
 
-        .submit-btn {
-            background: var(--primary-green);
+        .wa-btn {
+            background: #25D366;
             color: white;
             border: none;
-            padding: 15px 30px;
-            cursor: pointer;
+            padding: 15px;
             width: 100%;
             font-size: 1.1rem;
-            font-weight: 600;
-            border-radius: 5px;
+            font-weight: 700;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
         }
 
-        footer {
-            background: #222;
-            color: white;
-            padding: 3rem 5% 1rem;
-            margin-top: 4rem;
-        }
+        .info-panel { background: #f0f4f1; padding: 2rem; border-radius: 10px; height: fit-content; }
+        .info-panel h4 { color: var(--primary-green); margin-bottom: 15px; }
 
-        .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 40px;
-            border-bottom: 1px solid #444;
-            padding-bottom: 2rem;
-        }
+        footer { background: #1a1a1a; color: #ccc; padding: 3rem 5% 1.5rem; text-align: center; }
 
-        @media (max-width: 768px) {
+        @media (max-width: 850px) {
+            .contact-section { grid-template-columns: 1fr; padding: 1.5rem; }
             .hero h2 { font-size: 1.8rem; }
-            .contact-flex { padding: 1.5rem; }
         }
     </style>
 </head>
@@ -164,133 +167,121 @@
 
     <header>
         <div class="logo">
-            <h1>M.F. TRUST & SOCIETY</h1>
-            <span>Chak Korra Sadat, Fatehpur</span>
+            <h1>FURQUANIAH TRUST</h1>
+            <span>Chak Korra Sadat, Fatehpur (U.P.)</span>
         </div>
-        <nav>
-            <a href="#contact" class="btn" style="padding: 8px 15px; font-size: 0.9rem;">Join Us</a>
-        </nav>
+        <a href="#contact" class="btn" style="padding: 8px 15px; font-size: 0.8rem;">Contact Us</a>
     </header>
 
     <section class="hero">
-        <h2>Education & Health For All</h2>
-        <p>Providing Digital Excellence and Quality Basic/Madarsa Education with a mission of Zero Racism and Zero Casteism in rural Uttar Pradesh.</p>
-        <a href="#contact" class="btn">Enroll / Inquire Now</a>
+        <h2>Equal Education. Quality Health.</h2>
+        <p>Bridging the gap between rural life and digital excellence with a foundation of moral values. Serving all communities with Zero Racism & Zero Casteism.</p>
+        <a href="#contact" class="btn">Apply for Admission 2026</a>
     </section>
 
     <div class="badges">
-        <div class="badge-item">🏛️ MSME (Udyam) Registered</div>
-        <div class="badge-item">📜 NCMEI Certified Minority Institute</div>
-        <div class="badge-item">✅ UP Basic Board (Class 8th)</div>
-        <div class="badge-item">🕌 UP Madarsa Board (Class 12th)</div>
+        <div class="badge-item">📍 MSME Registered</div>
+        <div class="badge-item">🏢 Minority Institute</div>
+        <div class="badge-item">🏫 Building A & B</div>
+        <div class="badge-item">💻 Digital Centre 2026</div>
     </div>
 
     <div class="container">
-        <div class="section-title">
-            <h2>Our Dual Campus Excellence</h2>
-            <p>Tailored environments for different educational paths</p>
+        <div style="text-align:center; margin-bottom: 3rem;">
+            <h2 style="color: var(--primary-green);">Our Educational Wings</h2>
+            <p>Two specialized buildings for focused learning</p>
         </div>
 
         <div class="campus-grid">
             <div class="card">
                 <h3>Building A: Maktab Furkaniya</h3>
-                <p><strong>Primary to Junior High (Upto 8th)</strong></p>
+                <p><strong>Primary to Class 8th</strong></p>
+                <p><small>UP Basic Education Board</small></p>
                 <ul>
-                    <li>UP Basic Education Board Curriculum</li>
-                    <li>English, Hindi, and Urdu Medium</li>
-                    <li>CBSE-aligned Digital Classrooms</li>
-                    <li>Focus: Character & Confidence</li>
+                    <li>Trilingual: English, Hindi, Urdu</li>
+                    <li>Modern Digital Learning Habits</li>
+                    <li>Confidence & Character Building</li>
+                    <li>Science-First Curriculum</li>
                 </ul>
             </div>
 
             <div class="card">
                 <h3>Building B: Madarsa Furquaniah</h3>
-                <p><strong>Secondary to Senior Secondary (Upto 12th)</strong></p>
+                <p><strong>Class 9th to 12th</strong></p>
+                <p><small>UP Madarsa Education Board</small></p>
                 <ul>
-                    <li>UP Madarsa Education Board</li>
-                    <li>Munshi, Maulvi, and Alim Courses</li>
-                    <li>Integrated Vocational Training</li>
-                    <li>Modern Skill Development Hub</li>
+                    <li>Munshi, Maulvi, Alim Courses</li>
+                    <li>Integrated Vocational Skills</li>
+                    <li>Advanced Arabic & Urdu Studies</li>
+                    <li>Higher Secondary Excellence</li>
                 </ul>
             </div>
         </div>
 
-        <div class="motto-box">
-            <h2>Our Vision: The Digital Revolution</h2>
-            <p>Coming Soon: A High-Tech Computer Center and Health Help-Desk for BPL families.</p>
-            <h3 style="margin-top:20px; color: var(--secondary-gold);">MOTTO: EQUAL EDUCATION • QUALITY HEALTH • NO RACISM</h3>
+        <div class="motto-banner">
+            <h2>EQUAL EDUCATION • QUALITY HEALTH • NO RACISM</h2>
+            <p>We are dedicated to providing the best English-medium and Madarsa education to BPL families of all backgrounds.</p>
         </div>
 
-        <div id="contact" class="contact-flex">
+        <div id="contact" class="contact-section">
             <div>
-                <h2 style="color: var(--primary-green);">Get In Touch</h2>
-                <p style="margin-bottom: 20px;">Have questions about admissions or want to support our local mission? Fill out the form below.</p>
-                <form>
-                    <div class="form-group">
-                        <label>Full Name</label>
-                        <input type="text" placeholder="Enter your name" required>
-                    </div>
-                    <div class="form-group">
-                        <label>WhatsApp Number</label>
-                        <input type="tel" placeholder="+91 XXXX XXX XXX" required>
-                    </div>
-                    <div class="form-group">
-                        <label>I am interested in:</label>
-                        <select>
-                            <option>Student Admission</option>
-                            <option>Donation Inquiry (Local)</option>
-                            <option>Computer Lab Volunteer</option>
-                            <option>Health Desk Support</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label>Message</label>
-                        <textarea rows="4" placeholder="How can we help you?"></textarea>
-                    </div>
-                    <button type="submit" class="submit-btn">Send Message</button>
-                </form>
+                <h3 style="margin-bottom: 20px; color: var(--primary-green);">Inquiry & Admission Form</h3>
+                <div class="form-group">
+                    <label>Guardian/Student Name</label>
+                    <input type="text" id="wa_name" placeholder="Enter full name" required>
+                </div>
+                <div class="form-group">
+                    <label>Interest</label>
+                    <select id="wa_interest">
+                        <option>Class Nursery - 8th (Building A)</option>
+                        <option>Class 9th - 12th (Building B)</option>
+                        <option>Donation for Digital Center</option>
+                        <option>Health Help-Desk Inquiry</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Your Message</label>
+                    <textarea id="wa_msg" rows="3" placeholder="Write your question here..."></textarea>
+                </div>
+                <button type="button" onclick="sendWhatsApp()" class="wa-btn">
+                    <span>Send to WhatsApp</span>
+                </button>
             </div>
-            
-            <div style="background: #f9f9f9; padding: 2rem; border-radius: 10px;">
-                <h3 style="color: var(--primary-green); margin-bottom: 1rem;">Direct Support</h3>
-                <p><strong>📍 Location:</strong> Chak- Korra Sadat, Fatehpur, UP - 212622</p>
-                <p><strong>📧 Email:</strong> mmftrust.ftp@gmail.com</p>
-                <p><strong>📞 Contact:</strong> +91 9650329719, 9559359336</p>
-                
-                <hr style="margin: 20px 0;">
-                
-                <h4 style="color: #d32f2f;">Local Donation (Indian Bank)</h4>
-                <p style="font-size: 0.9rem; margin-top: 10px;">We currently accept local/national donations for our Digital Center.</p>
+
+            <div class="info-panel">
+                <h4>Support Our Mission</h4>
+                <p style="font-size: 0.85rem; margin-bottom: 10px;">We currently accept <strong>local/national donations</strong> to fund our upcoming Computer Centre for BPL students.</p>
+                <p><strong>Bank:</strong> Indian Bank</p>
                 <p><strong>A/c Name:</strong> Maktab/Madarsa Furquaniah Trust</p>
                 <p><strong>A/c No:</strong> 6308877300</p>
                 <p><strong>IFSC:</strong> IDIB000F011</p>
+                <hr style="margin: 15px 0; border: 0.5px solid #ccc;">
+                <p><strong>📞 Call:</strong> +91 9650329719</p>
+                <p><strong>📧 Email:</strong> mmftrust.ftp@gmail.com</p>
             </div>
         </div>
     </div>
 
     <footer>
-        <div class="footer-grid">
-            <div>
-                <h3>M.F. Trust & Society</h3>
-                <p>Serving the community since 1988. Dedicated to upliftment through literacy and health.</p>
-            </div>
-            <div>
-                <h3>Quick Links</h3>
-                <p>Admissions 2026</p>
-                <p>MSME Registration</p>
-                <p>Health Motto</p>
-            </div>
-            <div>
-                <h3>Governance</h3>
-                <p>Syed Hilaluddin Madany (India)</p>
-                <p>Asim Ahmad Madny</p>
-                <p>Syed Najmuddin Ahmad Madany</p>
-            </div>
-        </div>
-        <p style="text-align: center; margin-top: 2rem; font-size: 0.8rem; opacity: 0.7;">
-            &copy; 2026 Maktab/Madarsa Furquaniah Trust. All Rights Reserved.
-        </p>
+        <p><strong>Maktab/Madarsa Furquaniah Trust & Society</strong></p>
+        <p>Chak- Korra Sadat, District Fatehpur, Uttar Pradesh-212622</p>
+        <p style="margin-top: 15px; font-size: 0.75rem; color: #777;">&copy; 2026 M.F. Trust. Serving Humanity through Education.</p>
     </footer>
 
+    <script>
+        function sendWhatsApp() {
+            let name = document.getElementById('wa_name').value;
+            let interest = document.getElementById('wa_interest').value;
+            let msg = document.getElementById('wa_msg').value;
+            
+            if(name == "") { alert("Please enter your name"); return; }
+
+            let phone = "919650329719"; 
+            let fullMsg = `*New Website Inquiry*%0A%0A*Name:* ${name}%0A*Interested In:* ${interest}%0A*Message:* ${msg}`;
+            
+            let url = `https://wa.me/${phone}?text=${fullMsg}`;
+            window.open(url, '_blank').focus();
+        }
+    </script>
 </body>
 </html>
